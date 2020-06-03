@@ -11,8 +11,8 @@ curl -s -X POST --data '{
     "id"     :1,
     "method" :"avm.exportAVA",
     "params" :{
-        "username": "YOUR_USERNAME",
-        "password": "YOUR_PASSWORD",
+        "username": "$AVA_USERNAME",
+        "password": "$AVA_PASSWORD",
         "to":"3gtTxKciMbtzjfQijocpFVeDQy1HgAJNh",
         "amount": 10000
     }
@@ -23,8 +23,8 @@ curl -s -X POST --data '{
     "jsonrpc": "2.0",
     "method": "platform.importAVA",
     "params": {
-        "username": "YOUR_USERNAME",
-        "password": "YOUR_PASSWORD",
+        "username": "$AVA_USERNAME",
+        "password": "$AVA_PASSWORD",
         "to":"3gtTxKciMbtzjfQijocpFVeDQy1HgAJNh",
         "payerNonce":1
     },

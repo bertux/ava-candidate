@@ -11,8 +11,8 @@ curl -s -X POST --data '{
      "id": 1,
      "method": "keystore.createUser",
      "params": {
-         "username": "YOUR_USERNAME",
-         "password": "YOUR_PASSWORD"
+         "username": "$AVA_USERNAME",
+         "password": "$AVA_PASSWORD"
      }
 }' -H 'content-type:application/json;' 127.0.0.1:9650/ext/keystore | jq .
 
@@ -22,8 +22,8 @@ curl -s -X POST --data '{
     "id"     :2,
     "method" :"avm.createAddress",
     "params" :{
-        "username": "YOUR_USERNAME",
-        "password": "YOUR_PASSWORD"
+        "username": "$AVA_USERNAME",
+        "password": "$AVA_PASSWORD"
     }
 }' -H 'content-type:application/json;' 127.0.0.1:9650/ext/bc/X | jq .
 
@@ -31,8 +31,8 @@ curl -s -X POST --data '{
     "jsonrpc": "2.0",
     "method": "platform.createAccount",
     "params": {
-        "username": "YOUR_USERNAME",
-        "password": "YOUR_PASSWORD"
+        "username": "$AVA_USERNAME",
+        "password": "$AVA_PASSWORD"
     },
     "id": 1
 }' -H 'content-type:application/json;' 127.0.0.1:9650/ext/P | jq .

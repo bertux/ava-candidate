@@ -12,3 +12,5 @@ FOLDERNAME="/home/ava"
 mkdir -p ${FOLDERNAME}
 curl -L $URL -o ${FOLDERNAME}/${FILENAME} --cacert /etc/ssl/certs/ca-certificates.crt
 tar -zxf /tmp/${FILENAME} --directory ${FOLDERNAME}
+
+sudo apt install jq

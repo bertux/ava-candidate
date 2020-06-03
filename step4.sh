@@ -14,8 +14,8 @@ curl -s -X POST --data '{
     "jsonrpc": "2.0",
     "method": "platform.sign",
     "params": {
-        "username": "YOUR_USERNAME",
-        "password": "YOUR_PASSWORD",
+        "username": "$AVA_USERNAME",
+        "password": "$AVA_PASSWORD",
         "tx":"1112MrvuSsEjvPVETPibpPYSPdzfaqFBpSPZTYs8Dk81vi86rpJ5UdUXTkqL1mBdqDT874rP4wbpKdErRDiTcfGCuNKfRDmxq78HTHedeyYpF1C61JX4fx6CMe73DKTobuYZTNQEhGyHZ36KPrY65WEii5f9sq4iB93rgeehgNawkMBJ5YPUwNhThagmceihPLpGtcukAg64R72G",
         "signer":"3gtTxKciMbtzjfQijocpFVeDQy1HgAJNh"
     },
