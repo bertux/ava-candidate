@@ -12,7 +12,7 @@ curl -X POST --data '{
         "initialHolders": [
             {
                 "address": "$AVA_X_ADDRESS",
-                "amount": 10000000
+                "amount": 999999999
             }
         ],
         "username":"$AVA_USERNAME",
