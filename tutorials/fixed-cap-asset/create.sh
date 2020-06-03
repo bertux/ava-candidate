@@ -2,7 +2,7 @@
 set -e
 set -u
 #set -x
-curl -X POST --data '{
+curl -s -X POST --data '{
     "jsonrpc":"2.0",
     "id"     : 1,
     "method" :"avm.createFixedCapAsset",
@@ -15,7 +15,7 @@ curl -X POST --data '{
                 "amount": 999999999
             }
         ],
-        "username":"$AVA_USERNAME",
-        "password":"$AVA_PASSWORD"
+        "username":"",
+        "password":""
     }
 }' -H 'content-type:application/json;' 127.0.0.1:9650/ext/bc/X | jq .
